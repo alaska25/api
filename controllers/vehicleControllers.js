@@ -37,7 +37,6 @@ module.exports.registerVehicle= (reqBody) => {
 					vehicleType: reqBody.vehicleType,
 					makeOfVehicle: reqBody.makeOfVehicle,
 					chassisNumber: reqBody.chassisNumber,
-					model: reqBody.model,
 					plateNo: reqBody.plateNo
 				});
 				return newVehicle.save().then((vehicle, error) =>{

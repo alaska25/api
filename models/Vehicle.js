@@ -10,15 +10,11 @@ const vehicleSchema = new mongoose.Schema({
         required: [true, "Make of vehicle is required"]
     },
     chassisNumber: {
-        type: Number,
+        type: String,
         required: [true, "Chassis number is required"]
     },
-    model:{
-        type: String,
-        required: [true, "Model is required"]
-    },
     plateNo:{
-        type: Number,
+        type: String,
         required: [true, "Plate Number is required"]
     },
     registeredSystemOn:{
